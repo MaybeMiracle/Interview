@@ -1,0 +1,9 @@
+Tell me the Kth maximum num in the array.
+
+If(k is small){
+    please read "The 2nd maximum num".
+}
+else{
+    bubblesort/quicksort/heapsort...
+    read "Algorithm/SortAlgorithm"
+}
