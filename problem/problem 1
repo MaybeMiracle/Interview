@@ -1,0 +1,25 @@
+Input n-1 number, any two numbers are different, and each number belongs [1, n].
+Tell me which number in [1, n] has not been input.
+
+if(n is small){
+    bool vis[maxn];
+    memset(vis, false, sizeof(vis));
+    for(int i = 1; i < n; i++){
+        cin>>m;
+        vis[m] = true;
+    }
+    for(int i = 1; i <= n; i++){
+        if(!vis[i]){
+            return i;
+        }
+    }
+}
+else{
+    int sum = n*(n+1)/2;
+    int tsum = 0;
+    for(int i = 1; i < n; i++){
+        cin>>m;
+        tsum += m;
+    }
+    return sum - tsum;
+}
