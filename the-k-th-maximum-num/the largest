@@ -1,0 +1,6 @@
+Tell me the largest num in the array.
+
+No bubblesort!
+No quicksort!
+No heapsort!
+Just scan the array and record the largest num.
