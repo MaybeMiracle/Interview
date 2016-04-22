@@ -6,3 +6,26 @@ No heapsort!
 
 At first, get the largest num in the array, delete this num.
 At last, scan the array again annd get the 2nd maxinum num in the array.
+
+or
+
+// 时间复杂度O(n)
+const int MINNUMBER = -32767;
+int Find2ndMax(int Array[], int count)
+{
+    int MaxNumber = Array[0];
+    int SecMax = MINNUMBER;
+    for(int i = 1; i < count; i++){
+        if(Array[i] > MaxNumber){
+            SecMax = MaxNumber;
+            MaxNumber = Array[i];
+        }
+        else
+        {
+            if(Array[i] > SecMax){
+                SecMax = Array[i];
+            }
+        }
+    }
+    return SecMaxx;
+}
