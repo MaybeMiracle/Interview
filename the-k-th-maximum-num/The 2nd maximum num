@@ -1,0 +1,8 @@
+Tell me the 2nd maximum num in the array.
+
+No bubblesort!
+No quicksort!
+No heapsort!
+
+At first, get the largest num in the array, delete this num.
+At last, scan the array again annd get the 2nd maxinum num in the array.
